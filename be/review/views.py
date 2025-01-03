@@ -166,8 +166,10 @@ def mojike_img_create(request):
     response["Content-Disposition"] = "attachment; filename=processed_image.jpg"
     return response
 
-
 class Review_id_list(ListAPIView):
-    queryset = Review.objects.all()  # 모든 리뷰 가져오기
-    serializer_class = ReviewSerializer  # 시리얼라이저 지정
-    print(queryset)
+    serializer_class = ReviewSerializer
+
+    def get_queryset(self):
+        queryset = Review.objects.all()  # 모든 리뷰 가져오기
+        print(queryset)  # 여기서 출력
+        return queryset
