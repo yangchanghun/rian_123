@@ -1,0 +1,59 @@
+
+.main tr{
+    /* background-color: #eee; */
+    border: 1px solid black;
+
+}
+
+table{
+    width: 800px;
+    height: 800px;
+}
+.main td {
+    width: 100px;
+    height:100px;
+    cursor: pointer;
+}
+
+
+.main td:active{
+    background-color:#eee;
+}
+
+.main td.td-block{
+    background-color:rgb(224, 185, 185);
+    cursor :default;
+}
+
+
+.main th{
+    width: 100px;
+    height:100px;    
+}
+
+.main{
+    width: 800px;
+    height:800px;
+    float:left;
+}
+
+.reservation{
+    width: 800px;
+    height:800px;    
+    float:right
+}
+
+.pill {
+	display: inline-block;
+    text-align: center;
+	border: 1px solid lightgray;
+	border-radius: 100px;
+	padding: 3px 12px 5px 12px;
+	margin-right: 2px;
+	margin-bottom: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.reservation-0{
+    background-color: rgb(224, 185, 185);
+}

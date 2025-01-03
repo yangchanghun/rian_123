@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* html과 body가 전체 높이를 유지 */
+  }
+  .container-rgb51 {
+    display: flex;
+    flex-direction: row; /* 기본적으로 가로 정렬 */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh; /* 화면 전체 높이 */
+    background-color: rgb(51, 51, 51);
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+}
+
+.map {
+    float:left;
+    flex-direction: column; /* 세로 방향 정렬 */
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-left:250px;
+    border-top: 3px solid #eee;
+    border-bottom: 3px solid #eee;
+    text-align: center;
+}
+
+.address {
+    display: flex; /* 주소 제목과 내용을 한 줄에 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    gap: 10px; /* 제목과 텍스트 사이 간격 */
+    margin-bottom: 20px; /* 지도와 간격 추가 */
+}
+
+.address h2 {
+    margin: 0; /* 제목의 기본 마진 제거 */
+    font-size: 1.5rem;
+}
+
+.address p {
+    margin: 0; /* 텍스트의 기본 마진 제거 */
+    font-size: 1rem;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+.kakaomap {
+    width: 500px; /* 지도 너비 */
+    height: 350px; /* 지도 높이 */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+}
+
+.description-box{
+    float:left;
+    width: 500px;
+    height: 750px;
+    border-top: 3px solid #eee;
+    border-bottom: 3px solid #eee;
+    margin: 20px 0;
+    margin-left:100px;
+
+}
+
+
+.description-box p{
+    font-family: "Noto Sans KR", serif;
+    font-weight: 400;
+    font-size:15px;
+    color:rgb(181, 181, 181);
+    border-bottom:1px solid rgb(181, 181, 181);
+    text-align: left;
+}
+
+.bold{
+    color:rgb(255, 255, 255);
+    font-weight:600;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+}
+
+.res-btn{
+    color:white;
+    background-color: red;
+    width: 300px;
+    height:50px;
+    font-size:20px;
+    font-weight: 400;
+    font-family: "Noto Sans KR", serif;
+    display: inline-block;
+    text-align: center;
+    text-decoration-line: none;
+    display: flex; /* Flexbox 적용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    border-radius: 1px;
+}
+.ready-bg{
+    background-image: url('../image/readytime.jpg');
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+
+
+
+@media screen and (max-width: 1365px) {
+    .container-rgb51 {
+        flex-direction: column; /* 작은 화면에서는 세로 정렬 */
+        align-items: center; /* 아이템들을 가운데 정렬 */
+    }
+
+    .map, .description-box {
+        margin: 10px 0; /* 세로 정렬 시 상하 간격 추가 */
+        width: 100%; /* 부모 컨테이너의 너비에 맞게 조정 */
+        max-width: 500px; /* 최대 너비 설정 */
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .container-rgb51 {
+        min-height: 200vh; /* 화면 전체 높이 */
+        background-color: rgb(51, 51, 51);
+        box-sizing: border-box; /* 패딩 포함 크기 계산 */
+        display: flex;
+      }
+  }
+
+
+@media screen and (max-width: 576px) {
+    .container-rgb51 {
+        min-height: 200vh; /* 화면 전체 높이 */
+        background-color: rgb(51, 51, 51);
+        box-sizing: border-box; /* 패딩 포함 크기 계산 */
+      }
+    
+  }
+  

@@ -115,24 +115,24 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': env('POSTGRESQL_ENGINE'),
-        'NAME': env('POSTGRESQL_NAME'),          # 생성한 데이터베이스 이름
-        'USER': env('POSTGRESQL_USER'),        # 생성한 사용자 이름
-        'PASSWORD': env('POSTGRESQL_PASSWORD'),# 사용자의 비밀번호
-        'HOST': env('POSTGRESQL_HOST'),     # 데이터베이스 서버 주소
-        'PORT': env('POSTGRESQL_PORT'),          # PostgreSQL 기본 포트
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': env('POSTGRESQL_ENGINE'),
+#         'NAME': env('POSTGRESQL_NAME'),          # 생성한 데이터베이스 이름
+#         'USER': env('POSTGRESQL_USER'),        # 생성한 사용자 이름
+#         'PASSWORD': env('POSTGRESQL_PASSWORD'),# 사용자의 비밀번호
+#         'HOST': env('POSTGRESQL_HOST'),     # 데이터베이스 서버 주소
+#         'PORT': env('POSTGRESQL_PORT'),          # PostgreSQL 기본 포트
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 

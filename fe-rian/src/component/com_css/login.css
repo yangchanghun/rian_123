@@ -1,0 +1,73 @@
+.login-container {
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  text-align: center;
+}
+
+.login-box {
+  margin-top:30px;
+  width: 600px;
+  height: 800px;
+  background-color: #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 추가 */
+  border-radius: 8px; /* 모서리를 둥글게 */
+}
+
+.text-box {
+  margin-top: 50px;
+
+}
+
+.text-box p{
+  text-align: left;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 50px;
+}
+.form-inputt {
+  width: 200px; /* 입력 필드 너비 */
+  padding: 10px; /* 입력 필드 안쪽 여백 */
+  border: 1px solid #747474; /* 테두리 스타일 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  font-size: 14px; /* 입력 필드 글자 크기 */
+}
+
+.login-btn{
+  width: 500px;
+  height: 50px;
+  background-color:#ffffff ;
+  border:none;
+  color:rgb(0, 0, 0);
+  border-radius:50px;
+  border: 1px solid rgb(119, 119, 119);
+  margin-top: 10px;
+}
+
+.kakao-login-btn{
+  width: 500px;
+  height: 50px;
+  background-color:rgb(255, 255, 255) ;
+  border:none;
+  color:black;
+  border-radius:50px;
+  margin-top: 1px;
+  border: 1px solid rgb(119, 119, 119);
+
+}
+.kakao {
+  background-image: url('../image/kakaoimage.png'); /* 이미지 경로 */
+  width: 53px;
+  height: 16px;
+  margin-bottom:8px;
+  margin-right: 5px;
+}
+button i{
+  display: inline-block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
