@@ -125,12 +125,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'rian',          # 생성한 데이터베이스 이름
-        'USER': 'postgres',        # 생성한 사용자 이름
-        'PASSWORD': '5145',# 사용자의 비밀번호
-        'HOST': 'localhost',     # 데이터베이스 서버 주소
-        'PORT': '5432',          # PostgreSQL 기본 포트
+        'ENGINE': env('POSTGRESQL_ENGINE'),
+        'NAME': env('POSTGRESQL_NAME'),          # 생성한 데이터베이스 이름
+        'USER': env('POSTGRESQL_USER'),        # 생성한 사용자 이름
+        'PASSWORD': env('POSTGRESQL_PASSWORD'),# 사용자의 비밀번호
+        'HOST': env('POSTGRESQL_HOST'),     # 데이터베이스 서버 주소
+        'PORT': env('POSTGRESQL_PORT'),          # PostgreSQL 기본 포트
     }
 }
 # Password validation
