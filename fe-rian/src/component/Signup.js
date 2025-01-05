@@ -18,7 +18,7 @@ function Signup() {
     const permissionClick = (e) =>{
         e.preventDefault();
         setSendOk(true)
-        axios.post("http://3.34.194.168:8000/permissions/mailpermission/",
+        axios.post("http://43.203.236.11/permissions/mailpermission/",
             { 
                 to_email: email, 
               },
@@ -35,7 +35,7 @@ function Signup() {
     }
     const checkClick= (e) =>{
         e.preventDefault();
-        axios.post("http://3.34.194.168:8000/permissions/mailcheck/",
+        axios.post("http://43.203.236.11/permissions/mailcheck/",
             {
                 email : email,
                 code : code
@@ -81,7 +81,7 @@ function Signup() {
         e.preventDefault();
         if (good === true){
             axios.post(
-                "http://3.34.194.168:8000/api/signup/", // 요청 URL
+                "http://43.203.236.11/api/signup/", // 요청 URL
                 { 
                   email: email, 
                   password: pw ,
