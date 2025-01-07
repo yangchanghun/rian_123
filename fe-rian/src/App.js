@@ -26,7 +26,7 @@ function App() {
     const token = localStorage.getItem('token');
     if (token) {
       axios
-        .get("http://127.0.0.1:8000/api/me/", {
+        .get("/api/me/", {
           headers: {
             Authorization: `Bearer ${token}`, // JWT 인증 토큰 포함
           },
