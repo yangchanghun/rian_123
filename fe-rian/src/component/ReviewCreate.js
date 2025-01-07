@@ -125,7 +125,7 @@ console.log(previewImg)
             formData.append("images",newfile[i]);
         }
         
-        axios.post("http://127.0.0.1:8000/review/review_create",formData,{
+        axios.post("/review/review_create",formData,{
             headers:{
                 "Content-Type": "multipart/form-data",
                 Authorization: `Bearer ${token}`, // JWT 인증 토큰 추가
@@ -154,7 +154,7 @@ console.log(previewImg)
         formData.append("imgsrc", newfile[index]);
         console.log("file데이터타입",newfile[index].type)
         axios
-            .post("http://127.0.0.1:8000/review/mojike_img_create", formData, {
+            .post("/review/mojike_img_create", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
                 responseType: "blob", // Blob 데이터를 응답으로 받음
             })

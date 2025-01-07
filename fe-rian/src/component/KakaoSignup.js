@@ -37,7 +37,7 @@ function KakaoSignup() {
     const sendClick = (e) =>{
         e.preventDefault();
             axios.post(
-                "http://127.0.0.1:8000/api/kakaosignup/", // 요청 URL
+                "/api/kakaosignup/", // 요청 URL
                 { 
                   email: email, 
                   phone_number:pn,

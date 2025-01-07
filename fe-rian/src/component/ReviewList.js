@@ -7,7 +7,7 @@ function ReviewList(){
     const navigate = useNavigate();
     const[results,setResults] = useState([]);
     const [resultlength,setResultLength]= useState();
-    const [url,setUrl] = useState('http://127.0.0.1:8000/review/review_list');
+    const [url,setUrl] = useState('/review/review_list');
     const pagination = 8;
     const [currentPage, setCurrentPage] = useState(1); // 현재 활성화된 페이지 
     const [prev,setPrev] = useState('');
@@ -91,7 +91,7 @@ function ReviewList(){
                     </div>
                 </div>
             ) : (
-                <img src = {"http://127.0.0.1:8000/media/review_images/텅 빈.jpg"} onClick={()=>{navigate(`/reviewdetail/${a.id}`)}}></img>
+                <img src = {"/media/review_images/텅 빈.jpg"} onClick={()=>{navigate(`/reviewdetail/${a.id}`)}}></img>
             )}
         </div>
     ))
@@ -118,7 +118,7 @@ function ReviewList(){
                             class="page-link"
                             onClick={() => {
                                 setCurrentPage(i + 1); // 상태 먼저 업데이트
-                                setUrl(`http://127.0.0.1:8000/review/review_list?page=${i + 1}`);
+                                setUrl(`/review/review_list?page=${i + 1}`);
                             }}
                         >
                             {i + 1}

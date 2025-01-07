@@ -26,7 +26,7 @@ function Product_Register(){
         }
     
         axios
-          .post("http://127.0.0.1:8000/product/create_product", formData, {
+          .post("/product/create_product", formData, {
             headers: {
               "Content-Type": "multipart/form-data",
               Authorization: `Bearer ${token}`, // JWT 인증 토큰 추가

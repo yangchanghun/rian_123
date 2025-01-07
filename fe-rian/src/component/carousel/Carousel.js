@@ -82,7 +82,7 @@ const Carousel = ({ id }) => {
   const [subject, setSubject] = useState("");
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/review/detail/${id}`).then((response) => {
+    axios.get(`/review/detail/${id}`).then((response) => {
       const images = response.data.images || [];
       setImg(images);
       setName(response.data.user_name || "");
@@ -145,7 +145,7 @@ const Carousel = ({ id }) => {
             <div key={index}>
               <img
                 style={{ width: "400px", height: "500px",boxSizing:"border-box" }}
-                src={`http://127.0.0.1:8000${image.image}`}
+                src={`${image.image}`}
                 alt={`Slide ${index}`}
               />
             </div>

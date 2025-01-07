@@ -23,7 +23,7 @@ function Calender(){
         }
 
         axios
-        .get("http://127.0.0.1:8000/reservation/check_date", {
+        .get("/reservation/check_date", {
           headers: {
             Authorization: `Bearer ${token}`, // JWT 인증 토큰 포함
           },
@@ -209,7 +209,7 @@ function Calender(){
             };
             
 
-            axios.post("http://127.0.0.1:8000/reservation/send_aligo_sms",
+            axios.post("/reservation/send_aligo_sms",
                 { 
                     phone_number: phone_number, 
                     date_time: selectedDate 
@@ -229,7 +229,7 @@ function Calender(){
                 return
             })
 
-            axios.post("http://127.0.0.1:8000/reservation/create_reservation",requestData,{
+            axios.post("/reservation/create_reservation",requestData,{
                 headers: {
                     "Content-Type": "multipart/form-data",
                     Authorization: `Bearer ${token}`, // JWT 인증 토큰 추가

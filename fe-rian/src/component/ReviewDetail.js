@@ -15,7 +15,7 @@ function ReviewDetail(){
     const { id } = useParams(); // 경로에서 id를 추출
 
     useEffect(()=>{
-        axios.get(`http://127.0.0.1:8000/review/detail/${id}`).then((response)=>{
+        axios.get(`/review/detail/${id}`).then((response)=>{
             console.log(response.data.user_name)
             console.log(response.data)
             setName(response.data.user_name)

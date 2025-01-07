@@ -18,7 +18,7 @@ function KakaoCallback({set로그인}) {
 
         setIsProcessed(true); // 요청 처리 시작
         axios
-            .get(`http://127.0.0.1:8000/api/kakaologin?code=${code}`)
+            .get(`/api/kakaologin?code=${code}`)
             .then((response) => {
 
                 if (response.data.kakao == true){

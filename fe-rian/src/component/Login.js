@@ -24,7 +24,7 @@ function Login({set로그인}) {
     const sendClick = () =>{
       axios
       .post(
-        "http://127.0.0.1:8000/api/login/", // 요청 URL
+        "/api/login/", // 요청 URL
         { 
           email: id, 
           password: password 
@@ -42,7 +42,7 @@ function Login({set로그인}) {
         localStorage.setItem('token',response.data.access)
         console.log(localStorage.getItem('token'))
         // 사용자 정보 가져오기
-        axios.get("http://127.0.0.1:8000/api/me/",{
+        axios.get("/api/me/",{
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`, // Postman의 Bearer Token과 동일한 형식
               },

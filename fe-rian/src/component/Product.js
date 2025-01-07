@@ -6,7 +6,7 @@ function Product() {
 
     useEffect(() => {
         axios
-            .get("http://127.0.0.1:8000/product/list")
+            .get("/product/list")
             .then((response) => {
                 // console.log(response.data); // 데이터 로깅
                 // const names = response.data.map((item) => item.name); // 이름만 추출

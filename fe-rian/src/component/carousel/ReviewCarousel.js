@@ -9,7 +9,7 @@ function ReviewCarousel(){
     const[results,setResults] = useState([]);
     const [resultlength,setResultLength]= useState();
     useEffect(()=>{
-        axios.get("http://127.0.0.1:8000/review/review_id_list")
+        axios.get("/review/review_id_list")
         .then((response)=>{
             console.log(response.data)
             setResults(response.data)
