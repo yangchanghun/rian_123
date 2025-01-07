@@ -18,7 +18,7 @@ function Signup() {
     const permissionClick = (e) =>{
         e.preventDefault();
         setSendOk(true)
-        axios.post("/api/permissions/mailpermission/",
+        axios.post("/permissions/mailpermission/",
             { 
                 to_email: email, 
               },
@@ -35,7 +35,7 @@ function Signup() {
     }
     const checkClick= (e) =>{
         e.preventDefault();
-        axios.post("/api/permissions/mailcheck/",
+        axios.post("/permissions/mailcheck/",
             {
                 email : email,
                 code : code
@@ -81,7 +81,7 @@ function Signup() {
         e.preventDefault();
         if (good === true){
             axios.post(
-                "/api/api/signup/", // 요청 URL
+                "/api/signup/", // 요청 URL
                 { 
                   email: email, 
                   password: pw ,
