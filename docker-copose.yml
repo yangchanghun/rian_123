@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  frontend-builder:
+    build:
+      context: ./fe-rian
+      dockerfile: Dockerfile
+    volumes:
+      - frontend-build:/app/build
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - frontend-build:/usr/share/nginx/html
+
+volumes:
+  frontend-build:
