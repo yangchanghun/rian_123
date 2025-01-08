@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 function KakaoMap() {
   useEffect(() => {
+    let map; // 'map' 변수를 선언
+
     const loadMap = () => {
       const container = document.getElementById("map");
       const options = {
@@ -9,7 +11,7 @@ function KakaoMap() {
         level: 1,
       };
 
-      const map = new window.kakao.maps.Map(container, options);
+      map = new window.kakao.maps.Map(container, options);
 
       const marker = new window.kakao.maps.Marker({
         position: map.getCenter(),
@@ -18,7 +20,7 @@ function KakaoMap() {
 
       // 화면 크기 변경 시 맵 갱신
       window.addEventListener("resize", () => {
-        map.relayout();
+        if (map) map.relayout();
       });
     };
 
@@ -29,9 +31,11 @@ function KakaoMap() {
     }
 
     return () => {
-      window.removeEventListener("resize", () => {
-        map.relayout();
-      });
+      if (map) {
+        window.removeEventListener("resize", () => {
+          map.relayout();
+        });
+      }
     };
   }, []);
 
