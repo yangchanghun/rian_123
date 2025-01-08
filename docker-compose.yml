@@ -6,7 +6,8 @@ services:
       context: ./fe-rian
       dockerfile: Dockerfile
     volumes:
-      - frontend-build:/app/build
+      - frontend-build:/app/build  # 빌드 결과를 볼륨에 저장
+    command: ["npm", "run", "build"]  # 빌드 후 종료
 
   nginx:
     build:
@@ -15,7 +16,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - frontend-build:/usr/share/nginx/html
+      - frontend-build:/usr/share/nginx/html  # 빌드 결과를 nginx에서 참조
 
 volumes:
   frontend-build:
