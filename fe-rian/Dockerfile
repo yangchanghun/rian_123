@@ -15,5 +15,5 @@ COPY . .
 # 프론트엔드 애플리케이션 빌드
 RUN npm run build
 
-# 빌드 결과물 유지
-CMD ["cp", "-r", "/app/build", "/output"]
+# 빌드된 애플리케이션 경로 유지
+CMD ["npm", "start"]
