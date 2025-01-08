@@ -22,7 +22,7 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} '
         if [ ! -d "/home/ubuntu/rian_123" ]; then
-          git clone https://github.com/yangchanghun/rian_123.git /home/ubuntu/rian_123
+          git clone git@github.com:yangchanghun/rian_123.git /home/ubuntu/rian_123
         else
           cd /home/ubuntu/rian_123
           git pull
