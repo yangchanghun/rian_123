@@ -15,5 +15,6 @@ COPY . .
 # 포트 8000 노출
 EXPOSE 8000
 
+
 # Gunicorn 실행 (Django 애플리케이션 실행)
-CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000"]
