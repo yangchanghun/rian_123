@@ -8,14 +8,25 @@ import axios from 'axios';
 function ReviewCarousel(){
     const[results,setResults] = useState([]);
     const [resultlength,setResultLength]= useState();
-    useEffect(()=>{
+    useEffect(() => {
         axios.get("/review/review_id_list")
-        .then((response)=>{
-            console.log(response.data)
-            setResults(response.data)
-            setResultLength(response.data.length)
+        .then((response) => {
+            console.log(response.data);
+            if (Array.isArray(response.data)) {
+                setResults(response.data);
+                setResultLength(response.data.length);
+            } else {
+                console.error("Expected an array but got:", response.data);
+                // 예외 처리 (예: 빈 배열로 초기화)
+                setResults([]);
+                setResultLength(0);
+            }
         })
-    },[])
+        .catch((error) => {
+            console.error("Error fetching data:", error);
+        });
+    }, []);
+    
 
 
     const settings = {
