@@ -27,7 +27,7 @@ jobs:
           cd /home/ubuntu/rian_123
           git pull
         fi
-        docker compose build
-        docker compose down
-        docker compose up -d
+        docker-compose build
+        docker-compose down
+        docker-compose up -d
         '
