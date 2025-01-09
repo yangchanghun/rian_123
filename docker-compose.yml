@@ -36,7 +36,7 @@ services:
     command: >
       sh -c "
       python manage.py migrate &&
-      gunicorn myproject.wsgi:application --bind 0.0.0.0:8000"
+      gunicorn config.wsgi:application --bind 0.0.0.0:8000"
 
   # Nginx: React 앱을 제공하는 Nginx 서버
   nginx:
