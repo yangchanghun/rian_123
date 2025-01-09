@@ -6,6 +6,7 @@ WORKDIR /app
 # 의존성 파일 복사
 COPY package*.json ./
 
+RUN npm uninstall typescript
 # TypeScript 버전 수정 (추가된 명령어)
 RUN npm install typescript@4.9.5 --save-dev
 
@@ -16,4 +17,4 @@ RUN npm ci --legacy-peer-deps
 COPY . .
 
 # 프론트엔드 애플리케이션 빌드
-RUN npm run build
+RUN npm run build -y
