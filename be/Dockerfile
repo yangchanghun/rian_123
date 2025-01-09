@@ -9,6 +9,7 @@ COPY requirements.txt .
 # 의존성 설치
 RUN pip install -r requirements.txt
 
+RUN apt-get update && apt-get install -y libgl1 libglib2.0-0
 # 애플리케이션 코드 복사
 COPY . .
 
