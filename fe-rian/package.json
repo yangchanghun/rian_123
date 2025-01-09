@@ -798,7 +798,6 @@
     "typed-array-byte-offset": "^1.0.4",
     "typed-array-length": "^1.0.7",
     "typedarray-to-buffer": "^3.1.5",
-    "typescript": "^5.7.3",
     "unbox-primitive": "^1.1.0",
     "uncontrollable": "^7.2.1",
     "underscore": "^1.12.1",
@@ -887,5 +886,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
 }
