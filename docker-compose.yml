@@ -1,6 +1,7 @@
 version: "3.8"
 
 services:
+  # Frontend Builder: React 애플리케이션 빌드
   frontend-builder:
     build:
       context: ./fe-rian
@@ -8,7 +9,32 @@ services:
     volumes:
       - frontend-build:/app/build  # 빌드 결과를 볼륨에 저장
     command: ["npm", "run", "build"]  # 빌드 후 종료
+    working_dir: /app  # 빌드를 실행할 작업 디렉토리 설정
+    depends_on:
+      - backend  # 백엔드가 준비되어야 빌드를 시작할 수 있도록
 
+  # Backend: Django 애플리케이션
+  backend:
+    build:
+      context: ./be  # Django 프로젝트 경로
+      dockerfile: Dockerfile
+    container_name: django_container
+    environment:
+      - DB_HOST=${POSTGRESQL_HOST}  # PostgreSQL 컨테이너
+      - DB_PORT=${POSTGRESQL_PORT}
+      - DB_NAME=${POSTGRESQL_NAME}
+      - DB_USER=${POSTGRESQL_USER}
+      - DB_PASSWORD=${POSTGRESQL_PASSWORD}
+    volumes:
+      - ./backend:/app  # 백엔드 소스 코드
+    depends_on:
+      - db  # DB 서비스가 준비되어야 백엔드가 시작될 수 있도록
+    ports:
+      - "8000:8000"  # Django 서버를 8000 포트에서 실행
+    env_file:
+      - ./.env  # config 디렉토리 내 .env 파일을 참조
+
+  # Nginx: React 앱을 제공하는 Nginx 서버
   nginx:
     build:
       context: ./nginx
@@ -17,6 +43,23 @@ services:
       - "80:80"
     volumes:
       - frontend-build:/usr/share/nginx/html  # 빌드 결과를 nginx에서 참조
+    depends_on:
+      - frontend-builder  # frontend-builder가 먼저 빌드를 완료해야 nginx가 실행됨
 
+  # PostgreSQL: 데이터베이스
+  db:
+    image: postgres:13
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # 데이터 영속성을 위한 볼륨
+    ports:
+      - "5432:5432"  # PostgreSQL 서버 포트
+    env_file:
+      - ./.env  # config 디렉토리 내 .env 파일을 참조
 volumes:
-  frontend-build:
+  frontend-build:  # 프론트엔드 빌드 결과 저장을 위한 볼륨
+  postgres_data:  # PostgreSQL 데이터 저장을 위한 볼륨

@@ -88,7 +88,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://43.203.250.244",
+    "http://3.37.88.183",
     "http://localhost:3000",
 ]
 CORS_ALLOW_ALL_ORIGINS = False
