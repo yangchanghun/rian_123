@@ -20,11 +20,11 @@ services:
       dockerfile: Dockerfile
     container_name: django_container
     environment:
-      - DB_HOST=${POSTGRESQL_HOST}  # PostgreSQL 컨테이너
-      - DB_PORT=${POSTGRESQL_PORT}
-      - DB_NAME=${POSTGRESQL_NAME}
-      - DB_USER=${POSTGRESQL_USER}
-      - DB_PASSWORD=${POSTGRESQL_PASSWORD}
+      - DB_HOST=3.37.88.183  # PostgreSQL 컨테이너
+      - DB_PORT=5432
+      - DB_NAME=rian
+      - DB_USER=postgres
+      - DB_PASSWORD=5145
     volumes:
       - ./backend:/app  # 백엔드 소스 코드
     depends_on:
