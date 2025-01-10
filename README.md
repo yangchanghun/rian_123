@@ -45,7 +45,7 @@
 
 ## 이메일 인증 회원가입
 ![image](https://github.com/user-attachments/assets/cff57b15-c7c7-44bf-9ce2-e9f213d24b56)
-
+![회원가입 mail인증 ](https://github.com/user-attachments/assets/bcf80bc8-7dbf-49a6-bf83-1da6b59c2c4d)
 ## Work experience 
 
 - (00.00 - 00.00) 경력 1
