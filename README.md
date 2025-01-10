@@ -36,11 +36,7 @@
 
 # 기능소개
 
-## 사용자 회원가입 & 로그인
-django framework의 simplejwt 라이브러리 사용
-<br>
-회원가입시 진행했던 email과 password로 요청시
-<br>
+## 사용자 JWT활용 로그인
 {
 <br>
     "refresh": "refresh_token_value",
