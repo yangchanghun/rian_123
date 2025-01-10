@@ -1,6 +1,11 @@
 # rian_123
 안녕?123s!
 ![ezgif-5-a642f2fe11](https://github.com/user-attachments/assets/b8ddbcc6-0d89-4e2a-9505-d1637dbe7325)
+<br>
+![image](https://github.com/user-attachments/assets/7419e052-33e4-412b-a657-cd77ee7e7de7)
+<br>
+![image](https://github.com/user-attachments/assets/ef6fca99-c4a0-499e-9e8b-f573cd81f638)
+<br>
 ##✅ 기획 배경
 “같은 공간, 같은 시간 속 사람들은 어떤 모습일까?”
 같은 공간과 시간 속에 있지만 무심코 곁을 지나친 사람들은 어떤 생각을 하고 있을까?
