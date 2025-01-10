@@ -1,9 +1,9 @@
 # rian_123
 안녕?123s!
 ![ezgif-5-a642f2fe11](https://github.com/user-attachments/assets/b8ddbcc6-0d89-4e2a-9505-d1637dbe7325)
-<br>
+## ERD
 ![image](https://github.com/user-attachments/assets/7419e052-33e4-412b-a657-cd77ee7e7de7)
-<br>
+## 시스템 아키텍처
 ![image](https://github.com/user-attachments/assets/ef6fca99-c4a0-499e-9e8b-f573cd81f638)
 <br>
 ##✅ 기획 배경
