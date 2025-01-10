@@ -62,6 +62,10 @@
 5. Response Reports 메시지 리포트 정상 수신 여부에 대한 응답을 Server에 전달<br>
 ![알리고api사용](https://github.com/user-attachments/assets/b9167316-6b4d-4753-9075-01a6e1dc4de1)
 
+
+## 리뷰 사진 모자이크 처리
+![리뷰모자이크](https://github.com/user-attachments/assets/4634b774-38b1-4671-9147-bb9804fa514b)
+
 ## Work experience 
 
 - (00.00 - 00.00) 경력 1
