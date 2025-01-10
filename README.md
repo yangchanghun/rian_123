@@ -38,11 +38,17 @@
 
 ## 사용자 회원가입 & 로그인
 django framework의 simplejwt 라이브러리 사용
+<br>
 회원가입시 진행했던 email과 password로 요청시
+<br>
 {
+<br>
     "refresh": "refresh_token_value",
+<br>
     "access": "access_token_value"
+<br>
 }
+<br>
 ![image](https://github.com/user-attachments/assets/5b94de80-ddcf-4628-b1de-10eae01c24ac)
 ![로그인 JWT](https://github.com/user-attachments/assets/5bf62a1e-a880-4015-bfa7-4521f286c3b2)
 
