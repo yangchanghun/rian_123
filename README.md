@@ -36,15 +36,8 @@
 
 # 기능소개
 
-## 사용자 JWT활용 로그인
-{
-<br>
-    "refresh": "refresh_token_value",
-<br>
-    "access": "access_token_value"
-<br>
-}
-<br>
+## 사용자 장고 simple JWT활용 로그인
+
 ![image](https://github.com/user-attachments/assets/5b94de80-ddcf-4628-b1de-10eae01c24ac)
 ![로그인 JWT](https://github.com/user-attachments/assets/5bf62a1e-a880-4015-bfa7-4521f286c3b2)
 
