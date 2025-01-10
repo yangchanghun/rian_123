@@ -38,6 +38,7 @@
 
 ## 장고 simple JWT활용 로그인
 
+[코드보러가기](https://github.com/yangchanghun/rian_123/blob/main/be/account/views.py)
 ![image](https://github.com/user-attachments/assets/5b94de80-ddcf-4628-b1de-10eae01c24ac)
 ![로그인 JWT](https://github.com/user-attachments/assets/5bf62a1e-a880-4015-bfa7-4521f286c3b2)
 
