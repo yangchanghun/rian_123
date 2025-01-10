@@ -53,6 +53,14 @@
 ![image](https://github.com/user-attachments/assets/766878bd-d785-45c5-ab92-1cd6a783cf0a)
 ![카카오로그인   회원가입](https://github.com/user-attachments/assets/62c5c8e7-7f18-410c-8c39-6ac9d911854d)
 
+## 알리고API를 이용한 예약 안내 문자전송
+![image](https://github.com/user-attachments/assets/502a1bd3-9e79-47e8-8bc7-af459f698019)
+1. Request HTTP TCP/IP 통신을 이용하며 Client는 REST API 규격에 맞춰서 메시지 전송<br>
+2. Response HTTP Server는 Client로부터 전달 받은 메시지 전송요청 응답<br>
+3. SEND SMS Server는 통신사에 메시지를 전송<br>
+4. Get Reports 통신사업자로부터 메시지 리포트 수신<br>
+5. Response Reports 메시지 리포트 정상 수신 여부에 대한 응답을 Server에 전달<br>
+
 
 ## Work experience 
 
