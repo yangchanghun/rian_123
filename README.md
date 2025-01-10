@@ -28,7 +28,11 @@
 ‘옷깃만 스쳐도 인연’이라는 말 처럼, 스쳐지나가는 사람들이지만, 같은 시간과 공간을 공유한다는 것은 큰 의미를 지니고 있다.
 
 길 위에서 만나게 될 많은 사람들을 알아가기 위한 서비스! 동감이 나오게 되었다.
-## 🛠️ 기술스택
+## 🛠️ 개발환경
+- 백엔드:Python,Django,PostgreSQL
+- 프론트엔드:JavaScript,CSS3,HTML5,ReactJS
+- 인프라:AWS,Docker,Nginx,Gunicorn,GitHubAction
+  
 
 # 주희 Juhee Cha
 
