@@ -11,7 +11,6 @@ services:
     command: ["npm", "run", "build"]  # 빌드 후 종료
     working_dir: /app  # 빌드를 실행할 작업 디렉토리 설정
 
-
   # Nginx: React 앱을 제공하는 Nginx 서버
   nginx:
     build:
@@ -24,4 +23,5 @@ services:
     depends_on:
       - frontend-builder  # frontend-builder가 먼저 빌드를 완료해야 nginx가 실행됨
 
-
+volumes:
+  frontend-build:  # Named Volume 정의
