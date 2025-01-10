@@ -36,12 +36,15 @@
 
 # 기능소개
 
-## 사용자 장고 simple JWT활용 로그인
+## 장고 simple JWT활용 로그인
 
 ![image](https://github.com/user-attachments/assets/5b94de80-ddcf-4628-b1de-10eae01c24ac)
 ![로그인 JWT](https://github.com/user-attachments/assets/5bf62a1e-a880-4015-bfa7-4521f286c3b2)
 
 <br>
+
+## 이메일 인증 회원가입
+![image](https://github.com/user-attachments/assets/cff57b15-c7c7-44bf-9ce2-e9f213d24b56)
 
 ## Work experience 
 
