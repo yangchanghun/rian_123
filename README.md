@@ -48,16 +48,31 @@
 <br>
 
 ## 이메일 인증 회원가입
+
+코드보러가기
+<br>
+[백](https://github.com/yangchanghun/rian_123/blob/main/be/permissions/views.py) [프](https://github.com/yangchanghun/rian_123/blob/main/fe-rian/src/component/Signup.js)
+<br>
 ![image](https://github.com/user-attachments/assets/cff57b15-c7c7-44bf-9ce2-e9f213d24b56)
 ![회원가입 mail인증 ](https://github.com/user-attachments/assets/bcf80bc8-7dbf-49a6-bf83-1da6b59c2c4d)
 
 ## 카카오API 활용 로그인&회원가입
+
+코드보러가기
+<br>
+[백](https://github.com/yangchanghun/rian_123/blob/main/be/account/views.py) [프](https://github.com/yangchanghun/rian_123/blob/main/fe-rian/src/component/KakaoSignup.js)
+<br>
 ![image](https://github.com/user-attachments/assets/eb68e3ed-46e0-41e5-a8e0-52da1a6df3d0)
 ![image](https://github.com/user-attachments/assets/6c4e7972-435e-4526-a299-aa404abb9522)
 ![image](https://github.com/user-attachments/assets/766878bd-d785-45c5-ab92-1cd6a783cf0a)
 ![카카오로그인   회원가입](https://github.com/user-attachments/assets/62c5c8e7-7f18-410c-8c39-6ac9d911854d)
 
 ## 알리고API를 이용한 예약 안내 문자전송
+
+코드보러가기
+<br>
+[백](https://github.com/yangchanghun/rian_123/blob/main/be/reservation/views.py) [프](https://github.com/yangchanghun/rian_123/blob/main/fe-rian/src/component/Canlender.js)
+<br>
 ![image](https://github.com/user-attachments/assets/502a1bd3-9e79-47e8-8bc7-af459f698019)
 1. Request HTTP TCP/IP 통신을 이용하며 Client는 REST API 규격에 맞춰서 메시지 전송<br>
 2. Response HTTP Server는 Client로부터 전달 받은 메시지 전송요청 응답<br>
@@ -68,6 +83,11 @@
 
 
 ## 리뷰 사진 모자이크 처리
+
+코드보러가기
+<br>
+[백](https://github.com/yangchanghun/rian_123/blob/main/be/review/views.py) [프](https://github.com/yangchanghun/rian_123/blob/main/fe-rian/src/component/ReviewCreate.js)
+<br>
 ![리뷰모자이크](https://github.com/user-attachments/assets/4634b774-38b1-4671-9147-bb9804fa514b)
 
 ## Work experience 
