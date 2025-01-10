@@ -90,13 +90,13 @@
 <br>
 ![리뷰모자이크](https://github.com/user-attachments/assets/4634b774-38b1-4671-9147-bb9804fa514b)
 
-## Work experience 
+## EC2 배포 
 
-- (00.00 - 00.00) 경력 1
-- (19.00 - 19.00) 경력 2
+[배포과정 보러가기](https://velog.io/@gory4848/series/%EB%A6%AC%EC%95%88%EB%B0%B0%ED%8F%AC)
+<br>
 
-## Interest 👀
-- 흥미1
-- 흥미2
-[출처] [Github] 깃허브에 자기소개 readme.md 내 스타일로 꾸미기 : Mark down|작성자 쭈히히
-# 안녕
+## CI/CD
+
+
+[CI/CD과정 보러가기](https://velog.io/@gory4848/series/CICD)
+<br>
