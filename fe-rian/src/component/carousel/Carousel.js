@@ -145,7 +145,7 @@ const Carousel = ({ id }) => {
             <div key={index}>
               <img
                 style={{ width: "400px", height: "500px",boxSizing:"border-box" }}
-                src={`${image.image}`}
+                src={`http://127.0.0.1:8000${image.image}`}
                 alt={`Slide ${index}`}
               />
             </div>

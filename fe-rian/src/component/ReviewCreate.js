@@ -167,7 +167,7 @@ console.log(previewImg)
                     `processed_${newfile[index].name}`, // 새로운 파일 이름 설정
                     { type: newfile[index].type }
                 );
-                console.log("파일형식으로 저장장",processedFile)
+                console.log("파일형식으로 저장",processedFile)
                 // newfile 상태 업데이트
                 setNewFile((prevNewFile) => {
                     const updatedNewFile = [...prevNewFile];
