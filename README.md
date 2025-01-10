@@ -24,7 +24,8 @@
 
 <br>
 
-## Work experience 🤹‍♀️
+## Work experience ![image](https://github.com/user-attachments/assets/f32dea4e-577c-48bf-8b30-3a885a4af9de)
+
 - (00.00 - 00.00) 경력 1
 - (19.00 - 19.00) 경력 2
 
