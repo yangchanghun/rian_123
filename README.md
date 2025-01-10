@@ -91,12 +91,13 @@
 ![리뷰모자이크](https://github.com/user-attachments/assets/4634b774-38b1-4671-9147-bb9804fa514b)
 
 ## EC2 배포 
+![image](https://github.com/user-attachments/assets/902a8eb4-5215-428d-992e-85539aa21629)
 
 [배포과정 보러가기](https://velog.io/@gory4848/series/%EB%A6%AC%EC%95%88%EB%B0%B0%ED%8F%AC)
 <br>
 
 ## CI/CD
-
+![image](https://github.com/user-attachments/assets/86e07824-01bd-4129-afe5-a4fedeb5b5da)
 
 [CI/CD과정 보러가기](https://velog.io/@gory4848/series/CICD)
 <br>
