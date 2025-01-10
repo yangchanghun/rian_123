@@ -34,13 +34,17 @@
 - 인프라:AWS,Docker,Nginx,Gunicorn,GitHubAction
   
 
-# 주희 Juhee Cha
+# 기능소개
 
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fchajuhui123&count_bg=%23FFD5D5&title_bg=%23FF7575&icon=&icon_color=%23E7E7E7&title=VISIT&edge_flat=false)](https://hits.seeyoufarm.com)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jjuhee0913@gmail.com)](mailto:jjuhee0913@gmail.com)
-[![Instagram Badge](https://img.shields.io/badge/-Instagram-dd2a7b?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/zuzu_zzing/)](https://www.instagram.com/zuzu_zzing/) 
-[![Blog Badge](http://img.shields.io/badge/-Blog-brightgreen?style=flat-square&logo=FF5722&link=https://blog.naver.com/chajuhui123)](https://blog.naver.com/chajuhui123)
+## 사용자 회원가입 & 로그인
+django framework의 simplejwt 라이브러리 사용
+회원가입시 진행했던 email과 password로 요청시
+{
+    "refresh": "refresh_token_value",
+    "access": "access_token_value"
+}
+![image](https://github.com/user-attachments/assets/5b94de80-ddcf-4628-b1de-10eae01c24ac)
+![로그인 JWT](https://github.com/user-attachments/assets/5bf62a1e-a880-4015-bfa7-4521f286c3b2)
 
 <br>
 
