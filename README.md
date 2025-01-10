@@ -60,7 +60,7 @@
 3. SEND SMS Server는 통신사에 메시지를 전송<br>
 4. Get Reports 통신사업자로부터 메시지 리포트 수신<br>
 5. Response Reports 메시지 리포트 정상 수신 여부에 대한 응답을 Server에 전달<br>
-
+![알리고api사용](https://github.com/user-attachments/assets/b9167316-6b4d-4753-9075-01a6e1dc4de1)
 
 ## Work experience 
 
